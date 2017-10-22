@@ -1,5 +1,3 @@
 class User < ApplicationRecord
-    def index
-        
-    end
+    has_secure_password
 end

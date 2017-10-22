@@ -5,10 +5,35 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'icons/paper-plane.svg' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
   <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <%= link_to (image_tag "icons/paper-plane.svg",size: "30x30",class: "d-inline-block align-top"), root_path, class:"navbar-brand"  %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <%= link_to "Home", root_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+      <%= link_to "Users", root_path, class:"nav-link" %>
+    </li>
+    </ul>
+    <div class="mx-sm-3">
+   <%= link_to "Login", login_path, class:"btn btn-outline-light" ,role:"button" %>
+   <%= link_to "Sign up", signup_path, class:"btn btn-outline-light" ,role: "button"  %>
+   </div>
+  </div>
+</nav>
+
     <%= yield %>
   </body>
 </html>
