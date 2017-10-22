@@ -1,18 +1,23 @@
 <div class="container">
 
 <div class="row justify-content-center">
-      <form>
-        <h2>Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" type="email">
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input id="inputPassword" class="form-control" placeholder="Password" required="" type="password">
-        <div class="checkbox">
-          <label>
-            <input value="remember-me" type="checkbox"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
+<% provide(:title, "Log in") %>
+
+
+
+    <%= form_for(:session, url: login_path) do |f| %>
+      <h1>Log in</h1>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <% end %>
+
+
+
 </div>
     </div>
