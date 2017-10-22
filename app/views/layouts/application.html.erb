@@ -32,10 +32,12 @@
    <%= link_to "Sign up", signup_path, class:"btn btn-outline-light" ,role: "button"  %>
    </div>
   </div>
+  <button type="button" class="btn btn-success">Success</button>
 </nav>
 <% flash.each do |message_type, message| %>
   <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>
+
     <%= yield %>
   </body>
 </html>
