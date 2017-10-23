@@ -37,10 +37,12 @@
    <% end %>
    </div>
   </div>
-  <button type="button" class="btn btn-success">Success</button>
+
+<%= link_to "Send Message", message_path, class: "btn btn-success",role:"button" %>  
 </nav>
 <% flash.each do |message_type, message| %>
-  <div class="alert alert-<%= message_type %>"><%= message %></div>
+
+
 <% end %>
 
     <%= yield %>
