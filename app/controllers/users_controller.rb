@@ -3,7 +3,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   def index
-    @users = User.all
+    @users = User.where.not(id: current_user.id)
+    @friendlist =  FriendList.new
   end
   def new
     @user = User.new
@@ -17,8 +18,7 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
-  private
-  
+  private  
       def user_params
         params.require(:user).permit(:name, :email, :password,
                                      :password_confirmation)
