@@ -1,19 +1,20 @@
 
-
-
-
-
 <div class="container">
 <h1>Listing users</h1>
 <% @users.each do |user| %>
   <div class="col-sm">
+  <%= form_for (@friendlist) do |f| %>
   <div class="card">
     <div class="card-body">
       <h4 class="card-title"><%= user.name %></h4>
       <p class="card-text"><%= user.email %></p>
-      <a href="#" class="btn btn-primary">Add</a>
+      <%= f.hidden_field :friend_id, :value => user.id%>
+      <%= f.hidden_field :user_id, :value => current_user.id%>
+      <%= f.hidden_field :status, :value => 0%>
+      <%= f.submit "Add Friend", class:"btn btn-primary form-control" %>
     </div>
   </div>
+<% end %>
   </div>
   <% end %>
   

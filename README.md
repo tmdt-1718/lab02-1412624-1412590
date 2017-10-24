@@ -3,7 +3,7 @@
  +**Name of your app** là một bài tập môn TMDT. Ứng dụng cho phép người dùng gửi tin nhắn (email) cho người dùng khác.
  +
  +Thành viên:
- +* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
+ +* [x] **1412624** Nguyễn Quốc Anh Tú (1412624)
  +* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
  +
  +URL: **URL hosting của bài tập**
@@ -13,11 +13,11 @@
  +Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm vào chức năng theo mẫu. Mục nào ko có MSSV là tính điểm theo nhóm. Cần sắp xếp các chức năng bên dưới theo thứ tự MSSV đã thực hiện.
  +
  +Yêu cầu **GIT**:
- +* [ ] Sử dụng GIT theo [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).
+ +* [x] Sử dụng GIT theo [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).
  +
  +Yêu cầu **bắt buộc**
- +* [ ] Đăng ký tài khoản bằng email, password, và tên.  (**MSSV**)
- +* [ ] Đăng nhập bằng email và password. (**MSSV**)
+ +* [x] Đăng ký tài khoản bằng email, password, và tên.  (**1412624**)
+ +* [x] Đăng nhập bằng email và password. (**1412624**)
  +* [ ] Sau khi đăng nhập, người dùng sẽ được chuyển đến trang liệt kê danh sách các tin nhắn đã nhận, sắp xếp theo thứ tự thời gian, một nút để tạo tin nhắn mới, nút để xem danh sách bạn bè và nút để xem các tin nhắn đã gửi. (**MSSV**)
  +* [ ] Tin nhắn chưa đọc phải được làm nổi bật hơn các tin nhắn khác. (**MSSV**)
  +* [ ] Nhấn vào nút "xem danh sách bạn" sẽ chuyển người dùng đến trang liệt kê danh sách người dùng cùng với các chức năng thêm bạn. (**MSSV**)
