@@ -1,10 +1,16 @@
 class MessagesController < ApplicationController
-    def new
+    def new  
+        @message = Message.new      
     end
-    def show
+
+    def create
+        @message = Message.new(message_params)
+        render 'new' 
     end
-    def index
-    end
-    def destroy
+
+    private
+    def message_params
+        params.require(:messages).permit(:status,:sender_id,:receiver_id,:content,:sent_time,:seen_time)
+        
     end
 end
