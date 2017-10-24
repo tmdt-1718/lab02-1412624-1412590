@@ -6,7 +6,7 @@
  +* [x] **1412624** Nguyễn Quốc Anh Tú (1412624)
  +* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
  +
- +URL: **URL hosting của bài tập**
+ +URL: **https://limitless-beach-73142.herokuapp.com**
  +
  +## Yêu cầu
  +
