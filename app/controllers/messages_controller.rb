@@ -9,7 +9,6 @@ class MessagesController < ApplicationController
         @message = Message.new      
         @friendlist = friend_list
     end
-    # send new message
     def create
         @message = Message.new(message_params)
         if @message.save
