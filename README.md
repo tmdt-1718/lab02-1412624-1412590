@@ -48,7 +48,7 @@
  +
  +Link ảnh GIF demo ứng dụng:
  +
- +![Video Walkthrough](demo.gif)
+ +![Video Walkthrough](https://github.com/tmdt-1718/lab02-1412624-1412590/blob/master/demoLab2.gif)
  +
  +Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
  +
