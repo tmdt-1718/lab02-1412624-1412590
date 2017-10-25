@@ -18,18 +18,16 @@ ActiveRecord::Schema.define(version: 20171022153633) do
   create_table "friend_lists", force: :cascade do |t|
     t.integer "user_id"
     t.integer "friend_id"
-    t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
-    t.integer "status"
     t.integer "sender_id"
     t.integer "receiver_id"
     t.text "content"
-    t.datetime "sent_time"
     t.datetime "seen_time"
+    t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

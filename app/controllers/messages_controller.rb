@@ -1,19 +1,31 @@
 class MessagesController < ApplicationController
-    def new
-    end
-    def show
-    end
+    
+    # show all receive message
     def index
-        if params[:id]
-            @messages =Message.where('id < ? AND receiver_id = ?',params[:id], current_user.id).limit(5).order('id DESC')            
+        @inMessages =Message.where(receiver_id: current_user.id)   
+        @outMessages =Message.where(sender_id: current_user.id)   
+    end
+    def new  
+        @message = Message.new      
+        @friendlist = friend_list
+    end
+    def create
+        @message = Message.new(message_params)
+        if @message.save
+            flash[:success] = "Send successfully"
+            redirect_to messages_path
         else
-            @messages =Message.where(receiver_id: current_user).limit(5).order('id DESC')
-        end
-        respond_to do |format|
-            format.html
-            format.js
+           render 'new'
         end
     end
-    def destroy
+    # change status of message
+    def setReaded(id)
+        Message.update(id, :status=>1, :seen_time => Time.new)
     end
+    # destroy message have been seen
+    private
+        def message_params
+            params.require(:message).permit(:receiver_id,:content,:seen_time).merge!({sender_id: current_user.id, status: 0 })
+        end
+   
 end

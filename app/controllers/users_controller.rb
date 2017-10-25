@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def index
     @users = User.where.not(id: current_user.id)
     @friendlist =  FriendList.new
+    @message= Message.new
   end
   def new
     @user = User.new
