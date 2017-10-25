@@ -5,7 +5,7 @@
  +Thành viên:
  +* [x] **1412590** Phan Quốc Trung(1412590)
  +* [x] **1412624** Nguyễn Quốc Anh Tú (1412624)
- +* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+
  +
  +URL: **https://limitless-beach-73142.herokuapp.com/**
  +
