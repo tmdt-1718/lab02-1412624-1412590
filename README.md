@@ -21,6 +21,7 @@
  +* [ ] Sau khi đăng nhập, người dùng sẽ được chuyển đến trang liệt kê danh sách các tin nhắn đã nhận, sắp xếp theo thứ tự thời gian, một nút để tạo tin nhắn mới, nút để xem danh sách bạn bè và nút để xem các tin nhắn đã gửi. (**MSSV**)
  +* [ ] Tin nhắn chưa đọc phải được làm nổi bật hơn các tin nhắn khác. (**MSSV**)
  +* [ ] Nhấn vào nút "xem danh sách bạn" sẽ chuyển người dùng đến trang liệt kê danh sách người dùng cùng với các chức năng thêm bạn. (**MSSV**)
+ 
  +* [ ] Nhấn nút "tạo tin nhắn" sẽ chuyển sang giao diện cho phép người dùng gửi tin nhắn cho người dùng trong danh sách bạn bè. Người gửi phải nằm trong danh sách bạn bè và cho phép người dùng chọn qua dropdown. (**MSSV**)
  +* [ ] Nhấn "xem tin đã gửi" sẽ chuyển sang giao diện hiển thị danh sách tin nhắn đã gửi. Mỗi tin nhắn cần hiện thời gian người nhận đã đọc. (**MSSV**)
  +* [ ] Mỗi người dùng chỉ có thể đọc tin nhắn 1 lần duy nhất. (**MSSV**)

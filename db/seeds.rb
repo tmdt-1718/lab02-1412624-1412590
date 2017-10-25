@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Message.destroy_all
+10.times do |i|
+    time = Time.new
+    Message.create(sender_id: 2, receiver_id: 1, status: 0, content: "Đây là tin nhắn thứ ##{i}", sent_time: time)
+  end
